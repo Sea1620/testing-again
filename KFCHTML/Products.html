@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KFC Menu</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+
+            <!--KFC Logo-->
+            <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png" class="logo"></a>
+        
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <!--Main Content-->
+        <div class="content">
+            <div class="textBox">
+                <h2>KFC<span class="R">&#174</span><br><span class="menu-1st">Box For 2 - Zinger</span><br><span class="menu-2nd">Burger Box</span></h2>
+                <p class="menuList">
+                    1 Zinger Burger<br>
+                    2 pcs. Fried Chicken<br>
+                    2 pcs. WingZ Zabb<br>
+                    4 pcs. Nugget<br>
+                    1 Regular French Fries<br>
+                </p>
+
+                <!--Price-->
+                <h5 class="price"><span class="bath">&#3647;</span><span class="menuPrice">199.00</span></h5>
+
+                <!--Order & back-->
+                <a class="order" href="#">oder now</a>
+                <a class="back" href="index.html">back</a>
+            </div>
+            <div class="imgBox">
+                <img src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/ZB_BattleBox_S.png" class="kfc">
+            </div>
+        </div>
+
+        <!--Menu-->
+        <ul class="thumb">
+            <li><img src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/spicy_chicken_rice_combo_co_new.png" onclick="imgSlider('https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/spicy_chicken_rice_combo_co_new.png'); menuDetails1('Zabb Chicken Rice'); menuDetails2('Bowl Set'); menuList('1 Spicy Chicken Rice Bowl<br>1 Pepsi*'); menuPrice('85.00')"></li>
+            <li><img src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/ZB_BattleBox_S.png" onclick="imgSlider('https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/ZB_BattleBox_S.png'); menuDetails1('Box For 2 - Zinger'); menuDetails2('Burger Box'); menuList('1 Zinger Burger<br>2 pcs. Fried Chicken<br>2 pcs. WingZ Zabb<br>4 pcs. Nugget<br>1 Regular French Fries'); menuPrice('199.00')"></li>
+            <li><img src="https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/snack_box_co.png" onclick="imgSlider('https://www.kfc.co.th/Content/OnlineOrderingImages/Menu/Items/lg2x/snack_box_co.png'); menuDetails1('Snack Box'); menuDetails2(''); menuList('3 pcs. WingZ Zabb<br>7 pcs. Chicken Pop<br>2 pcs. Nuggets<br>1 Large French Fries'); menuPrice('139.00')"></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        //slider image effect
+        function imgSlider(anything){
+            document.querySelector('.kfc').src = anything;
+        }
+
+        //Menu details first-line
+        function menuDetails1(anything){
+            document.querySelector('.menu-1st').textContent = anything;
+        }
+
+        //Menu details second-line
+        function menuDetails2(anything){
+            document.querySelector('.menu-2nd').textContent = anything;
+        }
+
+        //Menu List
+        function menuList(anything){
+            document.querySelector('.menuList').innerHTML = anything;
+        }
+
+        //Price
+        function menuPrice(anything){
+            document.querySelector('.menuPrice').textContent = anything;
+        }
+    </script>
+</body>
+</html>

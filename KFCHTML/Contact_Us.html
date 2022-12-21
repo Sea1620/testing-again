@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+
+            <!--KFC Logo-->
+            <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png" class="logo"></a>
+        
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <!--Main Content-->
+        <article class="contact">
+            <form>
+                <h1 class="contactUs">contact us</h1><br>
+                <h5>We will get back to you as soon as we can !</h5>
+                <h5 style="color: rgb(225, 0, 0); margin-bottom: 40px;">For urgent case please contact our Call center team 1150</h5>
+                <div class="formDetails">
+                    
+                    <!--Name-->
+                    <label for="Name" class="topic">Name<span>*</span></label><br>
+                    <input type="text" class="contactDetails" required pattern="^([a-zA-Z,.'-, ]){1,25}$" title="Your name should be A-Z or a-z">
+
+                    <!--Email-->
+                    <label for="email" class="topic">Email address<span>*</span></label><br>
+                    <input type="email" class="contactDetails" required title="Please input your email address">
+
+                    <!--Mobile number-->
+                    <label for="mobileNum" class="topic">Mobile number<span>*</span></label><br>
+                    <input type="tel" class="contactDetails" required pattern="[0-9]{10}" title="Your mobile number should have 10 digit">
+
+                    <!--Select Enquiry Topic-->
+                    <label for="enTopic" class="topic">Select Enquiry Topic</label><br>
+                    <select class="contactDetails">
+                        <option>Please Select</option>
+                        <option>Suggestion</option>
+                        <option>Compliment</option>
+                        <option>Product Information</option>
+                        <option>Product Complaint</option>
+                        <option>Service Complaint</option>
+                        <option>Enquiry about Data Privacy</option>
+                        <option>Orders of KFC through</option>
+                        <option>Grab/Lineman/Foodpanda</option>
+                        <option>KFC Website or Application</option>
+                        <option>Media Enquiry</option>
+                        <option>Others</option>
+                    </select>
+
+                    <!--Reference Information-->
+                    <label for="Ref" class="topic">Reference Information (Order No./Branch)</label><br>
+                    <input type="text" class="contactDetails">
+
+                    <!--Feedback box-->
+                    <textarea class="contactDetails" placeholder="We'd Love To Hear From You*"></textarea>
+
+                </div>
+                <!--Submit Button-->
+                <button type="submit">Send</button>
+            </form>
+        </article>
+
+        <!--Social-->
+        <div class="footer">
+            <ul class="sci">
+               <li><a href="https://www.facebook.com/kfcth"><ion-icon name="logo-facebook"></ion-icon></a></li>
+               <li><a href="https://twitter.com/kfcth?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><ion-icon name="logo-twitter"></ion-icon></a></li>
+               <li><a href="https://www.instagram.com/kfcthailand/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+           </ul>
+       </div>
+   </section>
+
+    <!--icon script-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</body>
+</html>
